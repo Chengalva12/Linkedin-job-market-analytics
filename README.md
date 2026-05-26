@@ -155,17 +155,6 @@ Run using Live Server in VS Code.
 
 ---
 
-## Future Enhancements
-
-- Add dark/light mode
-- Add AI-based analytics
-- Add real-time job APIs
-- Add advanced filters
-- Add downloadable reports
-- Add animated charts
-
----
-
 ## Author
 
 ### Naga Sharanya Chengalva
