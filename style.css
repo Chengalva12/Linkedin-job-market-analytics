@@ -1,0 +1,267 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#0f172a,#111827,#1e3a8a);
+    color:white;
+    min-height:100vh;
+}
+
+/* NAVBAR */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    position:sticky;
+    top:0;
+    z-index:1000;
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#38bdf8;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-size:17px;
+    transition:0.3s;
+}
+
+nav a:hover,
+nav a.active{
+    color:#f59e0b;
+}
+
+/* HERO */
+
+.hero{
+    text-align:center;
+    padding:120px 20px 90px;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:25px;
+    background: linear-gradient(to right,#38bdf8,#60a5fa,#f59e0b);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.hero p{
+    width:75%;
+    margin:auto;
+    font-size:21px;
+    line-height:1.8;
+    color:#dbeafe;
+}
+
+/* BUTTON */
+
+.btn{
+    display:inline-block;
+    margin-top:35px;
+    padding:15px 35px;
+    border-radius:40px;
+    background: linear-gradient(to right,#0ea5e9,#2563eb,#f59e0b);
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.4s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* PAGE HEADER */
+
+.page-header{
+    text-align:center;
+    padding:80px 20px 40px;
+}
+
+.page-header h1{
+    font-size:48px;
+    margin-bottom:15px;
+    color:#38bdf8;
+}
+
+.page-header p{
+    font-size:20px;
+    color:#dbeafe;
+}
+
+/* CARDS */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    padding:60px;
+}
+
+.card{
+    background: rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.1);
+    padding:35px;
+    border-radius:22px;
+    text-align:center;
+    backdrop-filter:blur(10px);
+    transition:0.4s;
+    box-shadow:0 8px 25px rgba(0,0,0,0.3);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    background: linear-gradient(135deg,#0ea5e9,#2563eb,#f59e0b);
+}
+
+.card h2{
+    margin-bottom:15px;
+    color:#ffffff;
+}
+
+.card p{
+    line-height:1.7;
+    color:#f1f5f9;
+}
+
+/* DASHBOARD */
+
+.dashboard-section{
+    padding:50px 60px 80px;
+}
+
+iframe{
+    border:none;
+    border-radius:20px;
+    box-shadow:0 12px 40px rgba(0,0,0,0.5);
+    background:white;
+}
+
+/* TIMELINE */
+
+.timeline{
+    width:80%;
+    margin:auto;
+    padding-bottom:80px;
+}
+
+.step{
+    background: rgba(255,255,255,0.08);
+    padding:30px;
+    margin-bottom:25px;
+    border-radius:20px;
+    border-left:5px solid #38bdf8;
+    backdrop-filter:blur(10px);
+}
+
+.step h2{
+    margin-bottom:12px;
+    color:#38bdf8;
+}
+
+.step p{
+    line-height:1.7;
+    color:#e2e8f0;
+}
+
+/* ABOUT */
+
+.about-box{
+    width:75%;
+    margin:40px auto 100px;
+    padding:45px;
+    border-radius:25px;
+    background: rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.1);
+    backdrop-filter:blur(12px);
+    text-align:center;
+}
+
+.about-box h2{
+    font-size:40px;
+    margin-bottom:25px;
+    color:#38bdf8;
+}
+
+.about-box h3{
+    margin-top:30px;
+    margin-bottom:15px;
+    color:#f59e0b;
+}
+
+.about-box p{
+    font-size:18px;
+    line-height:1.9;
+    color:#f1f5f9;
+    margin-bottom:18px;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:30px;
+    background: rgba(255,255,255,0.06);
+    border-top:1px solid rgba(255,255,255,0.08);
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:20px;
+        padding:20px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .hero p{
+        width:95%;
+        font-size:18px;
+    }
+
+    .cards{
+        padding:30px;
+    }
+
+    .dashboard-section{
+        padding:30px 20px;
+    }
+
+    .timeline,
+    .about-box{
+        width:92%;
+    }
+
+}
